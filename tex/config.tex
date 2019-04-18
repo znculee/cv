@@ -1,0 +1,47 @@
+%! TEX root = ../cv.tex
+
+\usepackage{pifont}
+\usepackage[latin1]{inputenc}
+
+%\topmargin .5in
+%\oddsidemargin -.5in
+%\evensidemargin -.5in
+%\textwidth=6.0in
+\textheight=9.0in
+%\itemsep=0in
+%\parsep=0in
+\usepackage{fancyhdr}
+%\topmargin=0in
+%\textheight=8.5in
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\cfoot{\thepage}
+%\lfoot{\textit{\footnotesize Research Statement}}
+%\rfoot{{\footnotesize Curriculum Vitae, Amanda Akin, \thepage}}
+
+\setlength{\leftmargini}{.2in}
+\setlength{\leftmarginii}{.2in}
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{\tiny$\bullet$}
+
+\usepackage{hyperref}
+\usepackage{xcolor}
+\definecolor{darkblue}{rgb}{0, 0, 0.5}
+\hypersetup{
+    unicode=true,
+    bookmarksopen=true,
+    pdfstartview=FitH,
+    pdfpagelayout=OneColumn,
+    pdfpagemode=UseOutlines,
+    colorlinks=true,
+    citecolor=darkblue,
+    linkcolor=darkblue,
+    urlcolor=darkblue,
+    breaklinks
+}
+
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\newcommand{\ts}{\textsuperscript}
